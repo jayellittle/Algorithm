@@ -10,4 +10,8 @@ Asymptotic notation is a way to describe the running time or space complexity of
 
   → The maximum amount of time or space and algorithm may need to solve a problem
 
-- 
+
+
+https://www.geeksforgeeks.org/asymptotic-notation-and-analysis-based-on-input-size-of-algorithms/
+
+https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
