@@ -38,7 +38,17 @@ Asymptotic notation is a way to describe the running time or space complexity of
 
 Asymptotic notation does not provide an exact running time or space usage for an algorithm, but rather a description of how the algorithm scales with respect to input size. It is a useful tool for comparing the efficiency of different algorithms and for predicting how they will perform on large input sizes.
 
+## Experimental Analysis
 
+- A way of comparing algorithms by running those programs for different inputs and find which one takes less time
+
+- In this way, the algorithm with better performance may vary depending on the input
+
+  - The running times of inputs that may be important could be left out and not be included in the experiment
+ 
+## Pros and Cons of Asymptotic Analysis
+
+- 
 
 
 https://www.geeksforgeeks.org/asymptotic-notation-and-analysis-based-on-input-size-of-algorithms/
