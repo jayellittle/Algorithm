@@ -22,8 +22,13 @@ The Big-O asymptotic notation gives the upper bound area, which can be described
 
 ## Useful properties of Big-O notation analysis
 
-- a
+- Constant Multiplication
 
+  If $f(n)=c\cdot g(n)$, then $O(f(n))=O(g(n))$ ($c\neq 0$)
+  
+- Polynomial Function
+
+  If $f(n)=a_0+a_1\cdot n+a_2\cdot n^2+\cdots+a_m\cdot n^m$, then $O(f(n))=O(n^m)$
 
 ## Sources
 
