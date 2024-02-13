@@ -30,6 +30,12 @@ The Big-O asymptotic notation gives the upper bound area, which can be described
 
   If $f(n)=a_0+a_1\cdot n+a_2\cdot n^2+\cdots+a_m\cdot n^m$, then $O(f(n))=O(n^m)$
 
+- Summation Function
+
+  If $f_1(n)+f_2(n)+\cdots+f_m(n)$ and $f_i(n)\leq f_{i+1}(n)$ for all $i=1,~2,~\cdots$,~m,
+
+  then $O(f(n))=O(\max(f_1(n),~f_2(n),~\cdots,~f_m(n))$
+  
 ## Sources
 
 [Link](https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/)
