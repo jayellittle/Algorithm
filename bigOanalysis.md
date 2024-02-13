@@ -74,6 +74,20 @@ The algorithms can be classified as following from the best to worst performance
 
 ($n$ : input size, $c$ : positive constant)
 
+## Algorithmic Examples of Runtime Analysis
+
+- $O(\log{n})$ → Binary Search
+
+- $O(n)$ → Linear Search
+
+- $O(n\log{n})$ → Heap Sort, Merge Sort
+
+- $O(n^c)$ → Strassen's Matrix Multiplication, Bubble Sort, Selection Sort, Insertion Sort, Bucket Sort
+
+- $O(c^n)$ → Tower of Hanoi
+
+- $O(n!)$ → Determinant Expansion by Minors, Brute Force Search Algorithm for Traveling Salesman Problem
+
 ## Sources
 
 [Link](https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/)
