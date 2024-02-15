@@ -88,6 +88,24 @@ The algorithms can be classified as following from the best to worst performance
 
 - $O(n!)$ → Determinant Expansion by Minors, Brute Force Search Algorithm for Traveling Salesman Problem
 
+## Memory Footprint Analysis of Algorithms
+
+For performance analysis of an algorithm, the amount of memory usage should be considered too.
+
+This is referred to as the **memory footprint**, shortly known as *space complexity*.
+
+## Space Complexity
+
+The algorithms and its examples can be classified from the best-to-worst performance(space complexity) based on the worst-case scenarios as following.
+
+- Ideal algorithm ( $O(1)$ ) : Linear Search, Binary Search, Bubble Sort, Selection Sort, Insertion Sort, Heap Sort, Shell Sort
+
+- Logarithmic algorithm ( $O(\log{n})$ ) : Merge Sort
+
+- Linear algorithm ( $O(n)$ ) : Quick Sort
+
+- Sub-linear algorithm ( $O(n\log{n})$ ) : Radix Sort
+
 ## Sources
 
 [Link](https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/)
