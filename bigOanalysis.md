@@ -10,10 +10,31 @@ The Big-O asymptotic notation gives the upper bound area, which can be described
 
 - $O(g)$ is a set, but $f=O(g)$ does not mean $f\in O(g)$
 
+<details>
+<summary>Example</summary>
+
+  　If $f(n)=n^4+100n^2+10n+50$, $g(n)=n^4$
+  
+</details>
+
 
 ## General stepwise procedure for Big-O runtime analysis
 
 1. Figure out what the input is and what $n$ represents
+
+   <details>
+   <summary>Examples of input</summary>
+
+   - Size of an array
+     
+   - Polynomial degree
+  
+   - Number of elements in a matrix
+  
+   - Number of bits in the binary representation of the input
+  
+   - Vertices and edges in a graph
+   </details>  
 
 2. Express the maximum number of operations the algorithm performs in terms of $n$
 
@@ -46,7 +67,11 @@ The Big-O asymptotic notation gives the upper bound area, which can be described
 
 ## Running Time Complexity
 
-The algorithms can be classified as following from the best to worst performance.
+The algorithms can be classified as following from the best-to-worst performance.
+
+- Constant algorithm : $O(1)$
+
+  Gets a constant amount of runtime whatever the input size $n$ is
 
 - Logarithmic algorithm : $O(\log{n})$
 
@@ -56,7 +81,7 @@ The algorithms can be classified as following from the best to worst performance
 
   Runtime grows directly in proportion to $n$
 
-- Superlinear algorithm : $O(n\log{n})$
+- Superlinear(Linear Logarithmic) algorithm : $O(n\log{n})$
 
   Runtime grows in proportion to $n$
 
@@ -108,10 +133,6 @@ The algorithms and its examples can be classified from the best-to-worst perform
 
 ## Sources
 
-[Link](https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/)
+GeeksforGeeks. (2023, January 16). *Analysis of Algorithms | Big-O analysis*. [Link](https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/)
 
-
-
-
-
-
+Karumanchi Narasimha. (2011). *Data Structures And Algorithms Made Easy: Data Structures And Algorithmic Puzzles* (5th ed.). CareerMonk.
