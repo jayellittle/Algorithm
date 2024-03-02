@@ -1,72 +1,132 @@
 # Data Structures of C++
 
 
+
 ## Arrays
 - Size is specified when it is declared, and unchangeable afterward
 - Multidimensional array
-<details>
-<summary>Example</summary>
+- Type `array` is stored in '`<array>`' library
 
+### Declare an array
 ```cpp
-#include <iostream>
-using namespace std;
-
-int main()
-{
-  char hello[5] = {'h', 'e', 'l', 'l', 'o'};
-  cout << hello[4] << endl;  // Output : o
-
-  char matrix[3][3] = {
-    {'a', 'b', 'c'},
-    {'d', 'e', 'f'},
-    {'g', 'h', 'i'},
-  };
-  cout << matrix[1][1] << endl;  // Output : e
-
-  return 0;
-}
+int arr1[3] = {1, 2, 3};
+array<int, 3> arr2 = {4, 5, 6};
 ```
 
-</details>
+### A multidimensional array
+```cpp
+int mat[3][3] = {
+  {1, 2, 3},
+  {4, 5, 6},
+  {7, 8, 9}
+};
+```
+
 
 
 ## Vectors
 - Stores sequence of elements which are accessible by index
 - **Size is changeable**
-- `<vector>` library
-  - `.push_back()` : add element to the end of the vector
-  - `.pop_back()` : remove element from the end of the vector
-  - `.size()` : return the size of the vector
-  - `.empty()` : return whether the vector is empty
+- Stored in `<vector>` library
 
-<details>
-<summary>Example</summary> 
-
+### Declare a vector
 ```cpp
-#include <iostream>
-#include <vector>
-using namespace std;
-
-int main()
-{
-  vector <int> nums = {2, 0, 2, 4, 0};
-  cout << nums[3] << endl;  // Output : 4
-
-  nums.push_back(1);
-  nums.push_back(0);
-  nums.pop_back();
-
-  int i;
-  for (i=0; i<nums.size(); i++) {
-    cout << nums[i] << " ";
-  }  // Output : 2 0 2 4 0 1
-  cout << endl;
-
-  return 0;
-}
+vector<int> vec;
+vec = {1, 1, 2, 3};
 ```
 
-</details>
+### Index an element in a vector
+```cpp
+cout << vec.at(2) << endl;
+
+vec.at(2) = 8;
+cout << vec.at(2) << endl;
+cout << vec[2] << endl;
+```
+```
+2
+8
+8
+```
+
+### Number of elements in a vector
+```cpp
+cout << vec.size() << endl;
+```
+```
+4
+```
+
+### Reset a vector in certain option
+```cpp
+vector<int> vec1(4);
+vector<int> vec2(4, 5);
+
+int i;
+for (i=0; i<vec1.size(); i++) {
+  cout << vec1.at(i) << " ";
+}
+cout << endl;
+
+for (i=0; i<vec2.size(); i++) {
+  cout << vec2.at(i) << " ";
+}
+cout << endl;
+```
+```
+0 0 0 0 
+5 5 5 5 
+```
+
+### Add an element to the end of a vector
+```cpp
+cout << vec.size() << endl;
+
+vec.push_back(9);
+cout << vec.size() << endl;
+cout << vec.at(vec.size() - 1) << endl;
+```
+```
+4
+5
+9
+```
+
+### Remove the element at the end of a vector
+```cpp
+vec.pop_back();
+
+cout << vec.size() << endl;
+cout << vec.at(vec.size() - 1) << endl;
+```
+```
+4
+3
+```
+
+### Return whether a vector is empty or not
+```cpp
+cout << vec1.empty() << endl;
+
+while (!vec1.empty()) vec1.pop_back();
+cout << vec1.empty() << endl;
+```
+```
+0
+1
+```
+
+### Compare two vectors whether same or not
+```cpp
+vector<int> vec1 = {1, 2, 3};
+vector<int> vec2 = {1, 2, 3};
+
+if (vec1 == vec2) {
+  cout << "OK" << endl;
+}
+
+// (vec1 == {1, 2, 3}) <- Compiler error
+```
 
 
 ## Stacks and Queues
@@ -213,4 +273,5 @@ int main()
 
 
 ## Sources
-Codecademy (n.d.). *C++'s Built-In Data Structures*. [Link](https://www.codecademy.com/learn/c-plus-plus-for-programmers/modules/cpp-built-in-data-structures/cheatsheet)
+- Codecademy. *C++'s Built-In Data Structures*. [Link](https://www.codecademy.com/learn/c-plus-plus-for-programmers/modules/cpp-built-in-data-structures/cheatsheet)
+- AtCoder. *C++入門 AtCoder Programming Guide for beginners*. [Link](https://atcoder.jp/contests/apg4b/tasks/APG4b_n)
