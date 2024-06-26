@@ -132,13 +132,13 @@ if (vec1 == vec2) {
 ## Stacks and Queues
 - Stores data in specific orders
 
-|         |Stacks                                |Queues                                      |
-|---------|--------------------------------------|--------------------------------------------|
-|Order    |**LIFO**(Last In, First Out)          |**FIFO**(First In, First Out)               |
-|Library  |`<stack>`                             |`<queue>`                                   |
-|Index    |`.top()`                              |`.front()`, `.back()`                       |
-|`.push()`|add an element at the top of the stack|remove the element at the top of the stack  |
-|`.pop()` |add an element at the end of the queue|remove the element at the front of the queue|
+|         |Stacks                                    |Queues                                      |
+|---------|------------------------------------------|--------------------------------------------|
+|Order    |**LIFO**(Last In, First Out)              |**FIFO**(First In, First Out)               |
+|Library  |`<stack>`                                 |`<queue>`                                   |
+|Index    |`.top()`                                  |`.front()`, `.back()`                       |
+|`.push()`|add an element at the top of the stack    |add an element at the end of the queue      |
+|`.pop()` |remove the element at the top of the stack|remove the element at the front of the queue|
 
 <details>
 <summary>Example</summary>
